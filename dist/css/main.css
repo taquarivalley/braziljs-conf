@@ -219,20 +219,6 @@ body {
 	background-color: #201C1D;
 }
 
-.world-cup {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 162px;
-	width: 162px;
-	background: url('../img/braziljs-2014.png') no-repeat;
-	z-index: 29;
-}
-
-.world-cup:hover, .world-cup:focus {
-	opacity: .7;
-}
-
 /* WRAPPERS */
 .wrapper {
 	overflow: hidden;
@@ -417,60 +403,6 @@ body {
 	background: url('../img/ico-general.png') 0 -637px no-repeat;
 }
 
-/* SPEAKERS */
-#speakers {
-	width: 100%;
-	position: relative;
-	background-color: #D3D3D1;
-	overflow: hidden;
-	background-image: -webkit-linear-gradient(bottom, rgb(220, 222, 217) 15%,
-		rgb(209, 209, 204) 66%);
-	background-image: -moz-linear-gradient(50% 0% -90deg, rgb(207, 208, 205)
-		0%, rgba(207, 208, 205, 0) 25%);
-	background-image: -o-linear-gradient(bottom, rgb(220, 222, 217) 15%,
-		rgb(209, 209, 204) 66%);
-	background-image: -ms-linear-gradient(bottom, rgb(220, 222, 217) 15%,
-		rgb(209, 209, 204) 66%);
-	background-image: linear-gradient(bottom, rgb(220, 222, 217) 15%,
-		rgb(209, 209, 204) 66%);
-}
-
-#speakers .speakers-wrapper {
-	position: relative;
-	margin: auto;
-	height: 605px;
-	width: 1000px;
-}
-
-#speakers .speakers-wrapper .shadows {
-	position: absolute;
-	left: -176px;
-	width: 1333px;
-	height: 590px;
-	transition: opacity 0.8s ease;
-	opacity: 0;
-}
-
-#speakers .speakers-wrapper .shadows.theater-version {
-	background: url('../img/shadows.jpg') no-repeat center center;
-	opacity: 1;
-}
-
-#speakers .speakers-wrapper .shadows.directors-cut {
-	background: url('../img/shadows-directors-cut.jpg') no-repeat center
-		center;
-	opacity: 1;
-}
-
-#speakers .cities {
-	position: absolute;
-	bottom: -71px;
-	height: 278px;
-	width: 100%;
-	background: url('../img/bg-header.png') repeat-x center center;
-	z-index: 2;
-}
-
 /* HEADER */
 #main-wrapper {
 	background-color: #201C1D;
@@ -616,28 +548,6 @@ body {
 
 .live-modal .watch, .live-modal .disclaimer {
 	display: none;
-}
-
-/* SOCIAL CONTAINER */
-.social-wrapper {
-	position: relative;
-	top: -22px;
-	float: left;
-	margin-bottom: 34px;
-	padding-top: 15px;
-	height: 174px;
-	width: 100%;
-	background-color: #101012;
-}
-
-.social-bg {
-	position: absolute;
-	top: -82px;
-	display: block;
-	height: 83px;
-	width: 100%;
-	background: url('../img/bg-social.png') repeat-x;
-	z-index: 4;
 }
 
 /* MAIN CONTENT */
