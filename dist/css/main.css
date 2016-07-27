@@ -127,22 +127,6 @@ textarea {
 }
 
 /*
- * Image replacement
- */
-.ir {
-	background-color: transparent;
-	border: 0;
-	overflow: hidden;
-}
-
-.ir:before {
-	content: "";
-	display: block;
-	width: 0;
-	height: 150%;
-}
-
-/*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 .hidden {
@@ -217,6 +201,7 @@ a {
 
 body {
 	background-color: #201C1D;
+	margin-top: 40px;
 }
 
 /* WRAPPERS */
@@ -242,165 +227,176 @@ body {
 
 /* NAVIGATION */
 #menu {
+	background: #000;
+	display: block;
+	height: auto;
+	top: 0;
 	position: fixed;
-	left: 0px;
-	height: 100%;
-	width: 60px;
-	background-color: #1B1819;
-	z-index: 8;
-	transition: left 0.7s ease;
+	width: 100%;
+	z-index: 101;
 }
 
 #menu .menu-switch {
-	display: none;
-}
-
-#menu .language {
-	position: absolute;
-	top: 15px;
-	right: -30px;
+	cursor: pointer;
 	display: block;
-	margin: 10px 0 0 38px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #fff;
+	height: 40px;
+	margin-left: 10px;
+	width: 100%;
 }
 
-#menu .ballon {
-	padding: 11px 0 0 11px;
-	width: 45px;
-	height: 50px;
-	background-position: 0 -884px;
-}
-
-#menu .language:focus .ballon, #menu .language:hover .ballon {
-	background-position: -98px -884px;
+#menu .menu-switch:after {
+    color: #fff;
+    content: "\f0c9";
+    font-family: FontAwesome;
+    line-height: 40px;
 }
 
 #menu .chapters-list {
+	display: none;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: 25%;
-	list-style: none;
+}
+
+#menu .opened.chapters-list {
+	display: block;
+	z-index: 10;
 }
 
 #menu .chapters-list li {
-	position: relative;
-	display: block;
 	border-bottom: 1px solid #464B4D;
-}
-
-#menu .chapters-list li:first-child {
-	border-top: 1px solid #464B4D;
+	display: block;
+	position: relative;
 }
 
 #menu .chapters-list li a {
-	position: relative;
 	display: block;
-	width: 60px;
-	height: 62px;
+	height: 42px;
+	line-height: 42px;
+	text-decoration: none;
+	padding: 0 20px;
+	width: 100%;
 }
 
-#menu .chapters-list a:focus, #menu .chapters-list a:hover {
-	background-color: rgb(41, 38, 39);
+#menu .chapters-list li a:hover {
+	background-color: #0265ff;
 }
 
-#menu .chapters-list li a .sign {
-	position: absolute;
-	left: 14px;
-	bottom: 18px;
-	width: 30px;
-	height: 22px;
-}
-
-#menu .chapters-list li.videos a .sign {
-	bottom: 18px;
-	left: 17px;
-	width: 24px;
-	height: 25px;
-	background-position: -319px -592px;
-}
-
-#menu .chapters-list li.speakers a .sign {
-	background-position: 0 -592px;
-}
-
-#menu .chapters-list li.schedule a .sign {
-	height: 25px;
-	background-position: -49px -592px;
-}
-
-#menu .chapters-list li.local a .sign {
-	bottom: 17px;
-	left: 17px;
-	width: 26px;
-	height: 26px;
-	background-position: -99px -592px;
-}
-
-#menu .chapters-list li.ticket a .sign {
-	bottom: 14px;
-	left: 12px;
-	width: 35px;
-	height: 31px;
-	background-position: -145px -592px;
-}
-
-#menu .chapters-list li.manifest a .sign {
-	bottom: 17px;
-	left: 17px;
-	width: 21px;
-	height: 26px;
-	background-position: -200px -592px;
-}
-
-#menu .chapters-list li.sponsors a .sign {
-	bottom: 18px;
-	left: 4px;
-	width: 51px;
-	height: 22px;
-	background-position: -246px -592px;
+#menu .chapters-list li a:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 #menu .chapters-list li .extended-menu {
-	position: absolute;
-	left: 80px;
-	top: 0;
-	opacity: 0;
-	padding: 22px 25px 20px;
-	transition: all 0.5s ease;
-	background-color: #DB6E0E;
-	color: #FFF;
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	white-space: nowrap;
-	pointer-events: none;
-}
-
-.lt-ie9 #menu .chapters-list li .extended-menu {
 	display: none;
 }
 
-#menu .chapters-list a:hover+.extended-menu, #menu .chapters-list a:focus+.extended-menu
-	{
-	opacity: 1;
-	left: 60px;
+#menu .chapters-list li.speakers a:before {
+    content: "\f0c9";
 }
 
-.lt-ie9 #menu .chapters-list a:hover+.extended-menu, .lt-ie9 #menu .chapters-list a:focus+.extended-menu
-	{
-	display: block;
+#menu .chapters-list li.schedule a:before {
+    content: "\f0c9";
 }
 
-#menu .chapters-list li .extended-menu:before {
-	content: '';
-	position: absolute;
-	left: -7px;
-	width: 14px;
-	height: 14px;
-	background: url('../img/ico-general.png') 0 -637px no-repeat;
+#menu .chapters-list li.workshops a:before {
+    content: "\f0c9";
+}
+
+#menu .chapters-list li.local a:before {
+    content: "\f0c9";
+}
+
+#menu .chapters-list li.ticket a:before {
+    content: "\f0c9";
+}
+
+#menu .chapters-list li.manifest a:before {
+    content: "\f0c9";
+}
+
+#menu .chapters-list li.sponsors a:before {
+    content: "\f0c9";
+}
+
+@media (min-width: 992px) {
+	#menu {
+		position: fixed;
+		left: 0px;
+		height: 100%;
+		width: 60px;
+		background-color: #1B1819;
+		z-index: 8;
+		transition: left 0.7s ease;
+	}
+
+	#menu .menu-switch {
+		display: none;
+	}
+
+	#menu .chapters-list {
+		display: block;
+		padding: 0;
+		top: 25%;
+	}
+
+	#menu .chapters-list li:first-child {
+		border-top: 1px solid #464B4D;
+	}
+
+	#menu .chapters-list li a {
+		position: relative;
+		width: 60px;
+		height: 60px;
+	}
+
+	#menu .chapters-list li a:before {
+		line-height: 60px;
+	}
+
+	#menu .chapters-list li .extended-menu {
+		opacity: 0;
+	}
+
+	#menu .chapters-list li a .sign {
+		display: none;
+	}
+
+	#menu .chapters-list li .extended-menu {
+		background-color: #0265ff;
+		color: #FFF;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		height: 60px;
+		left: 80px;
+		opacity: 0;
+		padding: 22px 25px 20px;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		transition: all 0.5s ease;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.lt-ie9 #menu .chapters-list li .extended-menu {
+		display: none;
+	}
+
+	#menu .chapters-list a:hover+.extended-menu,
+	#menu .chapters-list a:focus+.extended-menu {
+		opacity: 1;
+		left: 60px;
+	}
+
+	.lt-ie9 #menu .chapters-list a:hover+.extended-menu,
+	.lt-ie9 #menu .chapters-list a:focus+.extended-menu
+	{
+		display: block;
+	}
 }
 
 /* HEADER */
