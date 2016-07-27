@@ -1,3 +1,6 @@
 # Eclipse Project
 .settings/
 .project
+
+# Node
+node_modules/
