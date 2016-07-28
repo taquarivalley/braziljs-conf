@@ -15,7 +15,7 @@
 }
 
 html, button, input, select, textarea {
-	color: #222;
+	color: #fff;
     font-family: 'Monda', sans-serif;
 }
 
@@ -410,7 +410,7 @@ body {
 
 /* HEADER */
 .header-wrapper {
-	margin-top: 30px;
+	margin: 30px 0;
 	position: relative;
 	width: 100%;
 }
@@ -436,6 +436,10 @@ body {
 	left: 50%;
 	margin-top: -74px;
 	margin-left: -194px;
+}
+
+.subtitle {
+	text-align: center;
 }
 
 .closed-event {
@@ -507,48 +511,43 @@ body {
 
 /* MAIN CONTENT */
 main {
-	margin: auto;
-	width: 980px;
-	clear: both;
 	text-align: center;
 }
 
-.LNG-en-us main {
-	padding-left: 96px;
-}
-
-main .what {
+main > * {
 	display: inline-block;
-	margin-right: 25px;
-	width: 378px;
-	font-size: 30px;
-	font-weight: 900;
-	letter-spacing: -1pt;
-	line-height: 120%;
-	color: rgb(225, 43, 38);
-	text-align: right;
-	text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.65);
+	margin: 0 10px;
 	text-transform: uppercase;
+	vertical-align: top;
+	width: 250px;
 }
 
-.LNG-en-us main .what {
-	width: 419px;
+.when-where {
+	box-sizing: border-box;
+	border: 1px solid #0265ff;
+	height: 63px;
+	padding: 10px;
 }
 
-main .where {
-	display: inline-block;
-	width: 432px;
-	font-size: 28px;
-	font-weight: bold;
-	letter-spacing: -1pt;
-	line-height: 130%;
-	color: rgb(212, 212, 210);
+.when-where .when {
+	float: left;
+	text-align: right;
+	width: 25%;
+}
+
+.when-where .where {
+	color: #999;
+	float: right;
+	font-size: 10px;
+	width: 70%;
 	text-align: left;
-	text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.65);
 }
 
-.LNG-en-us main .where {
-	width: 435px;
+.subscribe {
+	background: #0265ff;
+	height: 63px;
+	line-height: 63px;
+	text-decoration: none;
 }
 
 #videos-photos {
