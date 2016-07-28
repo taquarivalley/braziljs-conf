@@ -103,22 +103,6 @@ textarea {
 	margin-top: 0px !important;
 }
 
-.ico-general {
-	display: block;
-	background: url('../img/ico-general.png') no-repeat;
-}
-
-.ttl-general {
-	display: block;
-	background: url('../img/ttl-general.png') no-repeat;
-	color: #FFF;
-}
-
-.LNG-en-us .ttl-general {
-	display: block;
-	background: url('../img/ttl-general-EN.png') no-repeat;
-}
-
 .hide {
 	display: none;
 }
@@ -483,6 +467,18 @@ main > * {
 	text-decoration: none;
 }
 
+img.session-bg {
+	margin-top: -260px;
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+.title {
+	margin-top: 150px;
+	text-align: center;
+}
+
 #videos-photos {
 	position: relative;
 	margin-top: 100px;
@@ -532,34 +528,6 @@ main > * {
 	margin-right: 16px;
 	width: 461px;
 	vertical-align: top;
-}
-
-#videos-photos .title {
-	position: relative;
-	margin-bottom: 21px;
-	padding-left: 3px;
-	font-family: 'Bangers';
-	letter-spacing: 1px;
-	font-size: 50px;
-	line-height: 120%;
-	color: rgb(255, 255, 255);
-	text-shadow: 0px 7px 0px rgba(0, 0, 0, 0.65);
-	z-index: 0;
-}
-
-#videos-photos .photos .title {
-	margin-bottom: 9px;
-}
-
-#videos-photos .title:before {
-	content: '';
-	position: absolute;
-	top: 19px;
-	left: -3px;
-	height: 33px;
-	width: 100%;
-	background-color: #201C1D;
-	z-index: -1;
 }
 
 #videos-photos .videos-display {
@@ -616,38 +584,6 @@ main > * {
 }
 
 /* HEROES */
-#heroes {
-	clear: both;
-	margin-top: 60px;
-	width: 100%;
-}
-
-#heroes .heroes-wrapper {
-	position: relative;
-	padding-top: 70px;
-	margin: auto;
-	width: 980px;
-}
-
-#heroes .heroes-wrapper .burst {
-	position: absolute;
-	top: -85px;
-	left: -151px;
-	display: block;
-	width: 1280px;
-	height: 530px;
-	background: url('../img/heroes-bg.png') no-repeat;
-}
-
-#heroes .title {
-	position: relative;
-	margin: 15px 0 0 40px;
-	width: 472px;
-	height: 156px;
-	background-position: 0 -115px;
-	z-index: 5;
-}
-
 #heroes .heroes-list {
 	position: relative;
 	margin: -65px 0 0;
@@ -1763,27 +1699,6 @@ main > * {
 	width: 980px;
 }
 
-#schedule .schedule-wrapper .title {
-	position: relative;
-	left: 250px;
-	top: 15px;
-	margin: 0 0 97px 0;
-	width: 506px;
-	height: 169px;
-	background-position: 0 -461px;
-	z-index: 1;
-}
-
-#schedule .schedule-wrapper .burst {
-	position: absolute;
-	top: -156px;
-	left: -96px;
-	display: block;
-	width: 1280px;
-	height: 530px;
-	background: url('../img/bg-schedule.png') no-repeat;
-}
-
 #schedule .schedule-wrapper .thunder {
 	position: absolute;
 	top: -41px;
@@ -2022,21 +1937,6 @@ main > * {
 	width: 980px;
 }
 
-#locale .locale-wrapper .burst {
-	position: absolute;
-	top: -163px;
-	left: -101px;
-	display: block;
-	width: 1127px;
-	height: 384px;
-	background: url('../img/bg-locale.png') no-repeat;
-}
-
-#locale .locale-wrapper .title {
-	width: 195px;
-	height: 107px;
-}
-
 #locale .locale-wrapper .photo-container {
 	position: relative;
 }
@@ -2130,24 +2030,6 @@ main > * {
 	padding: 70px 20px 0;
 	margin: auto;
 	width: 980px;
-}
-
-#tickets .tickets-wrapper .title {
-	position: relative;
-	margin-bottom: 2px;
-	width: 548px;
-	height: 175px;
-	background-position: 0 -284px;
-}
-
-#tickets .tickets-wrapper .burst {
-	position: absolute;
-	top: -73px;
-	left: -15px;
-	display: block;
-	width: 1174px;
-	height: 397px;
-	background: url('../img/bg-tickets.png') no-repeat;
 }
 
 #tickets .tickets-wrapper .ballons {
@@ -2345,16 +2227,6 @@ to {
 	background: url('../img/bg-manifest.png') no-repeat;
 }
 
-#manifest .manifest-wrapper .title {
-	position: relative;
-	top: 27px;
-	margin: 0;
-	width: 312px;
-	height: 115px;
-	background-position: -7px -1202px;
-	z-index: 1;
-}
-
 #manifest .manifest-wrapper .our-history {
 	position: relative;
 	float: left;
@@ -2421,50 +2293,9 @@ to {
 	width: 980px;
 }
 
-#sponsors .sponsors-wrapper .title {
-	margin: auto auto 20px;
-	height: 29px;
-	width: 461px;
-	background-position: 0 -1492px;
-}
-
-.LNG-en-us #sponsors .sponsors-wrapper .title {
-	height: 16px;
-	width: 574px;
-	background-position: 0 -1496px;
-}
-
 #sponsors .sponsors-wrapper .sponsors {
 	display: inline-block;
 	margin-bottom: 70px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .ttl-general {
-	margin-bottom: 21px;
-}
-
-#sponsors .sponsors-wrapper .adamantiun .ttl-general {
-	width: 224px;
-	height: 17px;
-	background-position: 0 -1531px;
-}
-
-#sponsors .sponsors-wrapper .gold .ttl-general {
-	width: 159px;
-	height: 17px;
-	background-position: 0 -1564px;
-}
-
-#sponsors .sponsors-wrapper .silver .ttl-general {
-	width: 185px;
-	height: 13px;
-	background-position: -220px -1598px;
-}
-
-#sponsors .sponsors-wrapper .bronze .ttl-general {
-	width: 185px;
-	height: 13px;
-	background-position: 0 -1598px;
 }
 
 #sponsors .sponsors-wrapper .sponsors .sponsor-list {
@@ -2734,28 +2565,6 @@ to {
 	padding-bottom: 100px;
 }
 
-#sponsors .sponsors-wrapper .supporters .ttl-general {
-	height: 14px;
-	width: 203px;
-	background-position: 0 -1632px;
-}
-
-.LNG-en-us #sponsors .sponsors-wrapper .supporters .ttl-general {
-	width: 238px;
-	background-position: 0 -1633px;
-}
-
-#sponsors .sponsors-wrapper .supporters.educational .ttl-general {
-	width: 199px;
-	background-position: -220px -1632px;
-}
-
-.LNG-en-us #sponsors .sponsors-wrapper .supporters.educational .ttl-general
-	{
-	width: 231px;
-	background-position: -303px -1633px;
-}
-
 #sponsors .sponsors-wrapper .supporters ul {
 	margin: 0;
 	padding: 0;
@@ -2887,29 +2696,6 @@ to {
 	padding: 70px 20px 0;
 	margin: auto;
 	width: 980px;
-}
-
-#follow-us .follow-us-container .title {
-	position: relative;
-	margin: auto;
-	width: 438px;
-	height: 316px;
-	background: url('../img/bg-twitter.png') no-repeat;
-	z-index: 2;
-}
-
-.LNG-en-us #follow-us .follow-us-container .title {
-	background: url('../img/bg-twitter-en.png') no-repeat;
-}
-
-#follow-us .follow-us-container .burst {
-	position: absolute;
-	top: -14px;
-	left: 263px;
-	width: 448px;
-	height: 453px;
-	background: url('../img/twitter-burst.png') no-repeat;
-	z-index: 1;
 }
 
 #follow-us .follow-us-container .at-braziljs {
@@ -3088,14 +2874,6 @@ to {
 	padding: 70px 20px 0;
 	margin: auto;
 	width: 980px;
-}
-
-#the-guys .the-guys-container .title {
-	display: block;
-	margin: auto;
-	width: 414px;
-	height: 104px;
-	background-position: 0 -773px;
 }
 
 #the-guys .the-guys-container .curator {
