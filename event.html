@@ -11,12 +11,11 @@
         <meta name="author" content="Taquari Valley - Comunidade Empreendedora" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="icon" href="facebook.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
-        <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/conectado-iot.css" />      
-        <link type="text/plain" rel="author" href="humans.txt" />
         <link rel="canonical" href="http://conectadoiot.com.br" />
 
         <!--[if lt IE 9]>
@@ -25,19 +24,19 @@
 
         <!-- OPEN GRAPH -->
         <meta property="og:url" content="http://conectadoiot.com.br" />
-        <meta property="og:type" content="Website" /> 
+        <meta property="og:type" content="Website" />
         <meta property="og:title" content="Conectado IoT - dias 2 e 3 de setembro! Lajeado/RS!" /> 
         <!-- @TODO : Change Facebook image -->
         <meta property="og:image" content="http://conectadoiot.com.br/facebook.png" /> 
         <meta property="og:description" content="Em 2020, 50 bilhões de coisas estarão conectados na internet. Precisamos nos preparar para isso. Queremos te deixar atualizado sobre essa nova revolução." />
-		<!-- @TODO : Create Facebook pp -->
-		<meta property="fb:admins" content="" /> 
-		<meta property="fb:app_id" content="" /> 
+		<!-- @TODO : Create Facebook app -->
+		<meta property="fb:admins" content="" />
+		<meta property="fb:app_id" content="" />
 		<meta property="og:site_name" content="Conectado IoT" />
-		
+
 		<meta itemprop="startDate" content="2016-09-02" />
 		<meta itemprop="endDate" content="2016-09-03" />
-        
+
         <!-- @TODO: Remove after the website is ready to production -->
         <meta name="robots" content="noindex" />
     </head>
@@ -45,96 +44,44 @@
     	<div class="wrapper">
     		<span id="modal"></span>
     		<nav id="menu" role="navigation">
-    			<span class="menu-switch ico-general">&nbsp;</span>    			
+    			<span class="menu-switch">&nbsp;</span>
     			<ul class="chapters-list">
-                    <!--li class="videos">
-                        <a href="#videos-photos" title="Ir para os vídeos e fotos do evento"><span class="ir ico-general sign">Vídeos e fotos</span></a>
-                        <span class="extended-menu">Vídeos e fotos</span>
-                    </li-->
     				<li class="speakers">
-    					<a href="#Palestrantes" title="Ir para a seção dos palestrantes"><span class="ir ico-general sign">Palestrantes</span></a>
+    					<a href="#Palestrantes" title="Ir para a seção dos palestrantes"><span class="sign">Palestrantes</span></a>
     					<span class="extended-menu">palestrantes</span>
     				</li>
     				<li class="schedule">
-    					<a href="#Programacao" title="Ir para a programação do evento"><span class="ir ico-general sign">Programação</span></a>
+    					<a href="#Programacao" title="Ir para a programação do evento"><span class="sign">Programação</span></a>
     					<span class="extended-menu">programação</span>
     				</li>
+    				<li class="workshops">
+    					<a href="#Programacao" title="Ir para a lista de workshops"><span class="sign">Workshops</span></a>
+    					<span class="extended-menu">workshops</span>
+    				</li>
     				<li class="local">
-    					<a href="#Local" title="Ir para a área do local do evento"><span class="ir ico-general sign">Local</span></a>
+    					<a href="#Local" title="Ir para a área do local do evento"><span class="sign">Local</span></a>
     					<span class="extended-menu">local</span>
     				</li>
     				<li class="ticket">
-    					<a href="#Inscricoes" title="Ir para a seção de inscrições"><span class="ir ico-general sign">Inscrições</span></a>
+    					<a href="#Inscricoes" title="Ir para a seção de inscrições"><span class="sign">Inscrições</span></a>
     					<span class="extended-menu">inscrições</span>
-    				</li>    	
-    				<li class="manifest">
-    					<a href="#Manifesto" title="Ir para o nosso manifesto"><span class="ir ico-general sign">Manifesto</span></a>
-    					<span class="extended-menu">manifesto</span>
     				</li>
                     <li class="sponsors">
-                        <a href="#Patrocinadores" title="Ir para a seção dos nossos patrocinadores"><span class="ir ico-general sign">Patrocinadores</span></a>
+                        <a href="#Patrocinadores" title="Ir para a seção dos nossos patrocinadores"><span class="sign">Patrocinadores</span></a>
                         <span class="extended-menu">patrocinadores</span>
-                    </li>    				    	    							    				
+                    </li>
     			</ul>
-    			<a class="language" href="//braziljs.com.br/en" title="Go to the english version!"><span class="ico-general ballon">EN</span></a>
     		</nav>
-    		<div id="speakers">
-                <a class="ir world-cup" href="//braziljs.com.br/2014" title="Acesse o site do BrazilJS 2014!">BrazilJS 2014</a>
-		    	<div class="speakers-wrapper">
-		    		<span class="shadows">&nbsp;</span>
-		    	</div>
-    			<span class="cities">&nbsp;</span>
-    		</div>
 	    	<div id="main-wrapper" class="clearfix">
 	    		<header class="header-wrapper" role="banner">
-	    			<div class="keynote-container">
-		    			<h1 class="title ir" itemprop="name">BrazilJS Conf 2013</h1>
-			    		<strong class="the-ruler ir">Presença confirmada de Douglas Crockford</strong>
-			    		<div class="info">
-			    			<strong class="name" itemprop="performer">DOUGLAS CROCKFORD</strong>
-			    			<span class="alias">THE RULER</span>
-			    			<em class="company">PAYPAL</em>
-			    		</div>
-	    			</div>
-	    		</header>	    		
-				<div class="social-wrapper">
-					<span class="social-bg">&nbsp;</span>
-					<div class="social-container">
-                        <div id="social-networks">
-                            <strong class="share-this ir ico-general">Spread the word!</strong>
-                            <ul>
-                                <li><div class="fb-like" data-href="http://braziljs.com.br/" data-send="false" data-layout="box_count" data-width="72" data-show-faces="false"></div></li>
-                                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://braziljs.com.br/" data-via="braziljs" data-lang="en" data-count="vertical">Tweet</a></li>
-                                <li><div class="g-plusone" data-size="tall"></div></li>
-                            </ul>
-                        </div>                    
-                        <div class="closed-event">
-                            <span class="bracket">&lt;/</span>
-                            <strong class="closed">Inscrições<span class="visuallyhidden">encerradas!</span><span>Obrigado! E até o ano que vem :)</span></strong>
-                            <span class="bracket">&gt;</span>
-                        </div>
-					</div>					
-				</div>
+	    			<img class="bg" src="img/bg-home.png" />
+	    			<img class="twist" src="img/twist-home.png" />
+	    			<img class="logo" src="img/logo.png" />
+	    		</header>
 				<main role="main" class="clearfix">
 					<strong class="what" itemprop="description">A maior conferência de javascript do universo!</strong>
 					<strong class="where">22 E 23 DE AGOSTO <br/> TEATRO DO BOURBON COUNTRY PORTO ALEGRE/RS</strong>
 				</main>
-				<!--section id="videos-photos">
-				    <div class="wrapper">
-                        <div class="videos section">
-                            <h2 class="title">Assista aos vídeos!</h2>
-                            <a href="#" class="videos-display ir" title="acesse o youtube e veja todas as palestras do evento!">veja os vídeos de todas as palestras da conferência!</a>
-                            <p class="description">Confira os vídeos de todas as palestras dos dois dias de BrazilJS 2013 no nosso canal do YouTube!</p>
-                            <a href="#" class="button" title="Vá ver as palestras :)">Vá para o youtube!</a>
-                        </div>
-                        <div class="photos section">
-                            <h2 class="title">Confira as fotos!</h2>
-                            <span class="photos-thumb">&nbsp;</span>                        
-                            <p class="description">As fotos do evento já estão disponiveis na nossa página do Facebook. Vá lá ver ver tudo que rolou!</p>
-                            <a href="#" class="button" title="Veja as fotos dos dois dias de evento no Facebook">Veja no facebook!</a>
-                        </div>				        
-				    </div>				    
-				</section-->
 				<section id="heroes">
 					<div class="heroes-wrapper">
 						<span class="burst">&nbsp;</span>
