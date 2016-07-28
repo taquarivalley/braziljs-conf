@@ -200,7 +200,7 @@ a {
 }
 
 body {
-	background-color: #201C1D;
+	background-color: #000;
 	margin-top: 40px;
 }
 
@@ -245,10 +245,10 @@ body {
 }
 
 #menu .menu-switch:after {
-    color: #fff;
-    content: "\f0c9";
-    font-family: FontAwesome;
-    line-height: 40px;
+	color: #fff;
+	content: "\f0c9";
+	font-family: FontAwesome;
+	line-height: 40px;
 }
 
 #menu .chapters-list {
@@ -284,9 +284,9 @@ body {
 }
 
 #menu .chapters-list li a:before {
-    font-family: FontAwesome;
-    font-size: 20px;
-    margin-right: 20px;
+	font-family: FontAwesome;
+	font-size: 20px;
+	margin-right: 20px;
 }
 
 #menu .chapters-list li .extended-menu {
@@ -294,34 +294,38 @@ body {
 }
 
 #menu .chapters-list li.speakers a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.schedule a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.workshops a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.local a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.ticket a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.manifest a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 #menu .chapters-list li.sponsors a:before {
-    content: "\f0c9";
+	content: "\f0c9";
 }
 
 @media (min-width: 992px) {
+	body {
+		margin-top: 0;
+	}
+
 	#menu {
 		position: fixed;
 		left: 0px;
@@ -397,86 +401,40 @@ body {
 	{
 		display: block;
 	}
+
+	#main-wrapper {
+		margin-left: 60px;
+	}
 }
 
 /* HEADER */
-#main-wrapper {
-	background-color: #201C1D;
-}
-
 .header-wrapper {
-	margin: auto;
-	width: 1000px;
-	height: 56px;
-	z-index: 4;
-}
-
-.header-wrapper .keynote-container {
+	margin-top: 30px;
 	position: relative;
-	margin: auto;
-	left: 34px;
-	top: -109px;
-	width: 396px;
-	z-index: 100;
+	width: 100%;
 }
 
-.header-wrapper .keynote-container .title {
-	position: relative;
-	margin: auto;
-	width: 406px;
-	height: 186px;
-	background: url('../img/BrazilJS-logo.png') no-repeat;
-	z-index: 3;
+.header-wrapper .bg {
+	width: 100%;
+	height: auto;
 }
 
-.header-wrapper .keynote-container .the-ruler {
+.header-wrapper .twist {
+	display: block;
 	position: absolute;
-	top: -342px;
-	right: 95px;
-	width: 262px;
-	height: 459px;
-	background: url('../img/douglas.png') no-repeat;
-	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.header-wrapper .keynote-container .info {
+.header-wrapper .logo {
+	display: block;
 	position: absolute;
-	top: -244px;
-	right: -75px;
-	padding: 13px 15px 10px;
-	width: 209px;
-	background-color: #000;
-	color: #FFF;
-	z-index: 1;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	opacity: 0
-}
-
-.header-wrapper .keynote-container:focus .info, .header-wrapper .keynote-container:hover .info
-	{
-	opacity: 1;
-}
-
-.header-wrapper .keynote-container .info .name {
-	display: block;
-	margin-bottom: 1px;
-	font-size: 15px;
-	line-height: 15px;
-}
-
-.header-wrapper .keynote-container .info .alias {
-	display: block;
-	margin-bottom: 1px;
-	font-size: 13px;
-}
-
-.header-wrapper .keynote-container .info .company {
-	display: block;
-	font-size: 11px;
+	top: 50%;
+	left: 50%;
+	margin-top: -74px;
+	margin-left: -194px;
 }
 
 .closed-event {
