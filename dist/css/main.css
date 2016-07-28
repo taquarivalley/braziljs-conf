@@ -467,120 +467,23 @@ main > * {
 	text-decoration: none;
 }
 
-img.session-bg {
-	margin-top: -260px;
-	position: relative;
-	width: 100%;
-	z-index: -10;
+section {
+    background-image: url('../img/bg-section.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    margin-top: -100px;
+    padding-top: 65.31%; /* (img-height / img-width * container-width) */
+    width: 100%;
+}
+
+.section-wrapper {
+    margin-top: -65.31%; /* (img-height / img-width * container-width) */
+    padding-top: 200px;
 }
 
 .title {
-	margin-top: 150px;
 	text-align: center;
-}
-
-#videos-photos {
-	position: relative;
-	margin-top: 100px;
-	height: 451px;
-	background-color: #6A0C04;
-}
-
-#videos-photos:before {
-	content: '';
-	position: absolute;
-	margin-top: -3px;
-	background-color: #9E1814;
-	height: 1px;
-	width: 100%;
-}
-
-#videos-photos:after {
-	content: '';
-	position: absolute;
-	bottom: -3px;
-	background-color: #9E1814;
-	height: 1px;
-	width: 100%;
-}
-
-#videos-photos .wrapper {
-	position: relative;
-	overflow: visible;
-	margin: auto;
-	width: 980px;
-	z-index: 0;
-}
-
-#videos-photos .wrapper:before {
-	position: absolute;
-	content: '';
-	top: 208px;
-	left: -290px;
-	width: 1455px;
-	height: 243px;
-	background: url('../img/bg-videos-photos.png') no-repeat;
-	z-index: -1;
-}
-
-#videos-photos .section {
-	display: inline-block;
-	margin-right: 16px;
-	width: 461px;
-	vertical-align: top;
-}
-
-#videos-photos .videos-display {
-	display: block;
-	width: 458px;
-	height: 155px;
-	background: url('../img/videos-display.png') no-repeat;
-}
-
-#videos-photos .description {
-	font: 400 16px/20px 'Arial';
-	color: #FFF;
-}
-
-#videos-photos .button {
-	position: relative;
-	display: block;
-	margin: auto;
-	padding: 12px 0 2px;
-	width: 300px;
-	background-color: #FFF;
-	background-image: linear-gradient(to top, rgba(0, 0, 0, .6), transparent
-		50%);
-	text-decoration: none;
-	font-family: 'Bangers';
-	font-size: 36px;
-	color: #961814;
-	text-align: center;
-	text-shadow: 0px 3px 0px rgb(255, 255, 255);
-	opacity: .9;
-}
-
-#videos-photos .button:hover, #videos-photos .button:focus {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6),
-		transparent 50%);
-}
-
-#videos-photos .button:before {
-	content: '';
-	position: absolute;
-	left: -2px;
-	bottom: -12px;
-	width: 306px;
-	height: 12px;
-	background: url('../img/bg-videos-button.png') no-repeat;
-}
-
-#videos-photos .photos-thumb {
-	display: block;
-	margin-left: 25px;
-	width: 390px;
-	height: 167px;
-	background: url('../img/photos-thumb.png') no-repeat;
 }
 
 /* HEROES */
@@ -1690,13 +1593,6 @@ img.session-bg {
 	clear: both;
 	margin-top: 60px;
 	width: 100%;
-}
-
-#schedule .schedule-wrapper {
-	position: relative;
-	padding: 70px 0 0 20px;
-	margin: auto;
-	width: 980px;
 }
 
 #schedule .schedule-wrapper .thunder {
