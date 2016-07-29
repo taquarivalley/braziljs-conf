@@ -223,18 +223,20 @@ body {
 }
 
 #menu .menu-switch {
+	background: #0265ff;
 	cursor: pointer;
 	display: block;
 	height: 40px;
-	margin-left: 10px;
+	padding-left: 10px;
 	width: 100%;
 }
 
-#menu .menu-switch:after {
+#menu .menu-switch:before {
 	color: #fff;
 	content: "\f0c9";
 	font-family: FontAwesome;
 	line-height: 40px;
+	margin-right: 10px;
 }
 
 #menu .chapters-list {
@@ -251,7 +253,7 @@ body {
 }
 
 #menu .chapters-list li {
-	border-bottom: 1px solid #464B4D;
+	border-bottom: 1px solid #000;
 	display: block;
 	position: relative;
 }
@@ -313,11 +315,11 @@ body {
 	}
 
 	#menu {
+		background: #0265ff;
 		position: fixed;
 		left: 0px;
 		height: 100%;
 		width: 60px;
-		background-color: #1B1819;
 		z-index: 8;
 		transition: left 0.7s ease;
 	}
@@ -333,13 +335,18 @@ body {
 	}
 
 	#menu .chapters-list li:first-child {
-		border-top: 1px solid #464B4D;
+		border-top: 1px solid #000;
 	}
 
 	#menu .chapters-list li a {
 		position: relative;
 		width: 60px;
 		height: 60px;
+	}
+
+	#menu .chapters-list li a:hover {
+		background: #000;
+		color: #0265ff;
 	}
 
 	#menu .chapters-list li a:before {
@@ -355,13 +362,14 @@ body {
 	}
 
 	#menu .chapters-list li .extended-menu {
-		background-color: #0265ff;
-		color: #FFF;
+		background-color: #000;
+		color: #0265ff;
 		display: block;
 		font-size: 16px;
 		font-weight: bold;
-		height: 60px;
+		height: 62px;
 		left: 80px;
+		margin-top: -1px;
 		opacity: 0;
 		padding: 22px 25px 20px;
 		pointer-events: none;
