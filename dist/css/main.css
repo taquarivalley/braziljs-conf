@@ -55,6 +55,7 @@ hr {
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 img {
+	max-width: 100%;
 	vertical-align: middle;
 }
 
@@ -479,6 +480,10 @@ section {
 .section-wrapper {
     margin-top: -65.31%; /* (img-height / img-width * container-width) */
     padding-top: 200px;
+}
+
+.section-content {
+	margin: 0 40px;
 }
 
 .title {
@@ -1593,10 +1598,6 @@ section {
 }
 
 /* SCHEDULE */
-#schedule .section-content {
-	margin: 0 40px;
-}
-
 #schedule h4 {
 	background: #000;
 	border: 1px solid #0265ff;
@@ -1740,99 +1741,42 @@ section {
 }
 
 /* LOCALE */
-#locale {
-	display: inline-block;
-	clear: both;
-	margin-top: 200px;
-	width: 100%;
+#place .photo {
+	border: 1px solid #0265ff;
+	margin-bottom: 20px;
 }
 
-#locale .locale-wrapper {
-	position: relative;
-	padding: 70px 20px 0;
-	margin: auto;
-	width: 980px;
+#place .info-container {
+	background: #000;
+	border: 1px solid #0265ff;
+	padding: 40px;
 }
 
-#locale .locale-wrapper .photo-container {
-	position: relative;
-}
-
-#locale .locale-wrapper .photo-container .photo-1 {
-	position: absolute;
-	display: block;
-	width: 500px;
-	height: 322px;
-	background: url('../img/teatro-bourbon-1.jpg') no-repeat;
-	z-index: 3;
-}
-
-#locale .locale-wrapper .photo-container .photo-2 {
-	position: absolute;
-	top: -52px;
-	left: 25px;
-	display: block;
-	width: 500px;
-	height: 322px;
-	background: url('../img/teatro-bourbon-2.jpg') no-repeat;
-	z-index: 2;
-	-webkit-transform: rotate(-7deg);
-	-moz-transform: rotate(-7deg);
-	-o-transform: rotate(-7deg);
-	-ms-transform: rotate(-7deg);
-	transform: rotate(-7deg);
-}
-
-#locale .locale-wrapper .info-container {
-	position: relative;
-	float: right;
-	margin-top: -20px;
-	width: 369px;
-	z-index: 5;
-}
-
-#locale .locale-wrapper .info-container .address {
-	color: #FFF;
-	line-height: 15px;
-	font-size: 14px;
+#place .address {
 	font-style: normal;
 }
 
-#locale .locale-wrapper .info-container .address span {
-	display: block;
+@media (min-width: 768px) {
+	#place .place-info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	#place .place-info > div {
+		width: 48%;
+	}
+
+	#place .photo {
+		margin-bottom: 0;
+	}
 }
 
-#locale .locale-wrapper .info-container .address .theater-link {
-	display: block;
-	margin-top: 10px;
-	color: rgb(255, 201, 38);
-	text-decoration: none;
-	font-weight: bold;
-}
-
-#locale .locale-wrapper .info-container .address .theater-link:focus,
-	#locale .locale-wrapper .info-container .address .theater-link:hover {
-	text-decoration: underline;
-}
-
-#locale .locale-wrapper .how-to {
-	position: absolute;
-	top: 267px;
-	left: -254px;
-	width: 392px;
-	height: 237px;
-	background-position: 0 -952px;
-	z-index: 4;
-	text-indent: -9999px;
-}
-
-#locale #map {
+#map {
 	clear: both;
-	margin-top: 440px;
 	width: 100%;
-	height: 550px;
-	border-top: 10px solid black;
-	border-bottom: 10px solid black;
+	height: 300px;
+	margin-top: 20px;
 }
 
 /* TICKETS */
