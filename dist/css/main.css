@@ -1780,417 +1780,53 @@ section {
 }
 
 /* SPONSORS */
-#sponsors {
-	position: relative;
-	clear: both;
-	width: 100%;
-	background-color: #171314;
-}
-
-#sponsors:before {
-	content: '';
-	position: absolute;
-	top: -239px;
-	left: 0;
-	right: 0;
-	height: 239px;
-	width: 100%;
-	background: url('../img/bg-sponsors.png');
-	z-index: 2;
-}
-
-#sponsors .sponsors-wrapper {
-	position: relative;
-	padding: 70px 20px 0;
-	margin: auto;
-	width: 980px;
-}
-
-#sponsors .sponsors-wrapper .sponsors {
+#sponsors .sponsors {
 	display: inline-block;
 	margin-bottom: 70px;
 }
 
-#sponsors .sponsors-wrapper .sponsors .sponsor-list {
+#sponsors .sponsor-list {
 	padding: 0;
 	display: inline-block;
 	margin: 0;
 	list-style: none;
 }
 
-#sponsors .sponsors-wrapper .sponsors .sponsor-list li {
-	position: relative;
+#sponsors .sponsor-list li {
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+#sponsors .sponsor-list a {
+	background: #fff;
 	display: inline-block;
-	margin-top: 20px;
-	padding: 24px 16px;
-	width: 939px;
-}
-
-#sponsors .sponsors-wrapper .squares li a:after, #sponsors .sponsors-wrapper .sponsors .sponsor-list li:after
-	{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 12px;
-	height: 10px;
-	background: url('../img/bg-sponsor-detail.png') no-repeat;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list li:first-child {
-	margin-top: 0;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .sponsor {
 	float: left;
-	width: 220px;
-	opacity: 1;
-	transition: opacity, ease, .4s;
+	height: 150px;
+	margin-right: 10px;
+	padding: 20px;
+	width: 250px;
+    white-space: nowrap;
+    text-align: center;
 }
 
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .sponsor:hover,
-	#sponsors .sponsors-wrapper .sponsors .sponsor-list .sponsor:focus {
-	opacity: .7;
+#sponsors .img-center-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .sponsor .sponsors-general
-	{
-	display: block;
-	background: url('../img/sponsors.png') no-repeat;
-	text-indent: -9999px;
+#sponsors .sponsor-list img {
+	vertical-align: middle;
 }
 
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .blackberry {
-	background-color: #677A0E;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .blackberry .sponsor a
-	{
-	margin-top: 36px;
-	width: 201px;
-	height: 36px;
-	background-position: 0 0;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .mozilla {
-	background-color: #C13832;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .mozilla .sponsor a
-	{
-	margin-top: 16px;
-	width: 202px;
-	height: 60px;
-	background-position: 0 -56px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .liferay {
-	background-color: #FFF;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .liferay .sponsor a
-	{
-	margin-top: 12px;
-	width: 202px;
-	height: 49px;
-	background-position: 0 -201px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .liferay .about {
-	color: #000;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .w3c {
-	background-color: rgb(0, 74, 255);
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .w3c .sponsor a {
-	margin: 13px 0 0 -8px;
-	width: 209px;
-	height: 66px;
-	background-position: 0 -554px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .w3c .about {
-	color: #FFF;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .google {
-	background-color: #FFF;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .google .sponsor a {
-	margin: 22px 0 0 -8px;
-	width: 203px;
-	height: 52px;
-	background-position: 0 -728px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .google .about {
-	color: #000;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .microsoft {
-	background-color: #FFF;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .microsoft .sponsor a
-	{
-	margin: 24px 0 0 -8px;
-	width: 208px;
-	height: 44px;
-	background-position: 0 -800px;
-}
-
-.LNG-en-us #sponsors .sponsors-wrapper .sponsors .sponsor-list .microsoft .sponsor a
-	{
-	margin-top: 11px;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .microsoft .about {
-	color: #000;
-}
-
-#sponsors .sponsors-wrapper .sponsors .sponsor-list .about {
-	float: left;
+#sponsors .sponsor-list p {
 	margin: 0;
-	width: 670px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	line-height: 120%;
-	color: rgb(255, 255, 255);
-	text-align: left;
 }
 
-#sponsors .sponsors-wrapper .squares .sponsor-list {
-	padding: 0;
+#sponsors .criexp {
+	background-color: #2f53b4;
 }
 
-#sponsors .sponsors-wrapper .squares li {
-	display: inline-block;
-	margin-left: 14px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list li {
-	padding: 0;
-	margin-top: 0;
-	width: 220px;
-}
-
-#sponsors .sponsors-wrapper .squares li:first-child {
-	margin-left: 0;
-}
-
-#sponsors .sponsors-wrapper .squares li a {
-	display: block;
-	width: 221px;
-	height: 141px;
-	background-color: #fff;
-	text-indent: -9999px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor .github {
-	margin: 50px 0 0 28px;
-	width: 163px;
-	height: 44px;
-	background-position: 0 -137px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor .caelum {
-	margin: 43px 0 0 16px;
-	width: 191px;
-	height: 60px;
-	background-position: 0 -410px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor .adobe {
-	margin: 50px 0 0 28px;
-	width: 163px;
-	height: 44px;
-	background-position: 0 -137px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor.adobe {
-	background-color: rgb(236, 26, 44);
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor.adobe .sponsors-general
-	{
-	margin: 48px 0 0 17px;
-	height: 42px;
-	width: 191px;
-	background-position: 0 -491px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor.treinaweb .sponsors-general
-	{
-	margin: 35px auto;
-	height: 67px;
-	width: 155px;
-	background-position: 0 -640px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor .wakanda {
-	margin: 45px 0 0 12px;
-	width: 193px;
-	height: 52px;
-	background-position: 0 -270px;
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor.heroku {
-	background-color: rgb(41, 38, 77);
-}
-
-#sponsors .sponsors-wrapper .squares .sponsor-list .sponsor .heroku {
-	margin: 51px 0 0 31px;
-	width: 159px;
-	height: 48px;
-	background-position: 0 -342px;
-}
-
-#sponsors .sponsors-wrapper .squares li .sponsor.join-us {
-	width: 221px;
-	background: url('../img/bg-join-us.png') no-repeat;
-}
-
-#sponsors .sponsors-wrapper .be-a-sponsor {
-	margin: auto auto;
-	padding-bottom: 80px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 120%;
-	color: rgb(255, 255, 255);
-	text-align: center;
-}
-
-#sponsors .sponsors-wrapper .be-a-sponsor a {
-	color: rgb(255, 204, 0);
-	text-decoration: none;
-}
-
-#sponsors .sponsors-wrapper .be-a-sponsor a:hover, #sponsors .sponsors-wrapper .be-a-sponsor a:focus
-	{
-	text-decoration: underline;
-}
-
-#sponsors .sponsors-wrapper .supporters {
-	display: inline-block;
-	padding-bottom: 100px;
-}
-
-#sponsors .sponsors-wrapper .supporters ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#sponsors .sponsors-wrapper .supporters ul li {
-	float: left;
-	margin-right: 40px;
-}
-
-#sponsors .sponsors-wrapper .supporters a {
-	display: inline-block;
-	background: url('../img/supporters.png') no-repeat;
-	transition: opacity, ease, .4s;
-	opacity: 1;
-}
-
-#sponsors .sponsors-wrapper .supporters a:focus, #sponsors .sponsors-wrapper .supporters a:hover
-	{
-	opacity: .7;
-}
-
-#sponsors .sponsors-wrapper .supporters a.marimbondo {
-	width: 201px;
-	height: 47px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.senac {
-	width: 300px;
-	height: 68px;
-	background-position: 0 -68px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.eventick {
-	width: 129px;
-	height: 47px;
-	background-position: 0 -156px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.abradi {
-	margin-top: 13px;
-	width: 168px;
-	height: 38px;
-	background-position: 0 -223px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.casa-do-codigo {
-	margin-top: 13px;
-	width: 130px;
-	height: 38px;
-	background-position: 0 -281px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.get-up {
-	margin-top: 13px;
-	width: 102px;
-	height: 53px;
-	background-position: 0 -339px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.treinaweb {
-	margin-top: 13px;
-	width: 118px;
-	height: 51px;
-	background-position: 0 -412px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.superplayer {
-	margin-top: 21px;
-	width: 180px;
-	height: 57px;
-	background-position: 0 -483px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.kinghost {
-	margin-top: 30px;
-	width: 193px;
-	height: 26px;
-	background-position: 0 -545px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.publisoft {
-	margin-top: 23px;
-	width: 170px;
-	height: 38px;
-	background-position: 0 -592px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.qi {
-	margin-top: 12px;
-	width: 93px;
-	height: 67px;
-	background-position: 0 -650px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.nyvra {
-	margin: 33px 0 10px;
-	width: 244px;
-	height: 35px;
-	background-position: 0 -737px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.computech {
-	margin-top: 21px;
-	width: 182px;
-	height: 45px;
-	background-position: 0 -792px;
-}
-
-#sponsors .sponsors-wrapper .supporters a.revista-W {
-	margin-top: 9px;
-	width: 72px;
-	height: 72px;
-	background-position: 0 -857px;
+#sponsors .taquari-valley {
+	background-color: #ffcc33;
 }
