@@ -1830,3 +1830,15 @@ section {
 #sponsors .taquari-valley {
 	background-color: #ffcc33;
 }
+
+/* FOOTER */
+.footer {
+	background: url('../img/bg-footer.png') no-repeat center bottom;
+	padding: 0 40px 35px 40px;
+}
+
+.footer .copyright {
+	background: #000;
+	padding: 10px;
+	text-align: center;
+}
