@@ -499,11 +499,6 @@ section {
 	text-align: center;
 }
 
-.title img {
-	max-width: 350px;
-	width: 50%;
-}
-
 /* HEROES */
 #heroes .heroes-list {
 	list-style: none;
