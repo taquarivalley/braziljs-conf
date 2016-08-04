@@ -282,31 +282,23 @@ body {
 }
 
 #menu .chapters-list li.speakers a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.schedule a:before {
-	content: "\f0c9";
+	content: "\f007";
 }
 
 #menu .chapters-list li.workshops a:before {
-	content: "\f0c9";
+	content: "\f0ad";
+}
+
+#menu .chapters-list li.schedule a:before {
+	content: "\f0ca";
 }
 
 #menu .chapters-list li.local a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.ticket a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.manifest a:before {
-	content: "\f0c9";
+	content: "\f041";
 }
 
 #menu .chapters-list li.sponsors a:before {
-	content: "\f0c9";
+	content: "\f005";
 }
 
 @media (min-width: 992px) {
@@ -478,8 +470,8 @@ main > * {
 
 section {
     background-image: url('../img/bg-section.png');
-    background-size: contain;
     background-repeat: no-repeat;
+    clear: both;
     margin-top: -100px;
     padding-top: 65.31%; /* (img-height / img-width * container-width) */
     width: 100%;
@@ -501,40 +493,32 @@ section {
 
 /* HEROES */
 #heroes .heroes-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	list-style: none;
 	padding: 0;
 	position: relative;
 }
 
-#heroes .heroes-list .hero {
-	height: 200px;
+#heroes .heroes-list li {
 	width: 100%;
-	position: relative;
-	display: block;
-	text-decoration: none;
-	transition: all 0.5s ease-in;
-	background-size: 100%;
-	background-image: -moz-radial-gradient(
-		rgb(255, 255, 255) 0%,
-		rgb(2, 101, 255) 100%
-	);
-	background-image: -webkit-gradient(radial,
-		color-stop(0, rgb(255, 255, 255)),
-		color-stop(1, rgb(68, 68, 68))
-	);
-	background-image: -webkit-radial-gradient(
-		rgb(255, 255, 255) 0%,
-		rgb(68, 68, 68) 100%
-	);
-	background: radial-gradient(
-			rgb(0, 80, 154) 0%,
-			rgb(2, 101, 255) 100%
-		), #808080
-	;
 }
 
-.ie9 #heroes .heroes-list .hero {
-	background-color: #CACACA;
+#heroes .heroes-list .hero {
+	background: #0265ff;
+	display: block;
+	height: 200px;
+	margin-bottom: 40px;
+	padding-right: 15px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.5s ease-in;
+	width: 100%;
 }
 
 #heroes .heroes-list .photo {
@@ -570,6 +554,12 @@ section {
 	color: #fff;
 }
 
+@media (min-width: 992px) {
+	#heroes .heroes-list li {
+		width: 48%;
+	}
+}
+
 /* HEROES OVERLAY */
 #heroes-overlay {
 	box-sizing: padding-box;
@@ -589,6 +579,17 @@ section {
 #heroes-overlay ul {
 	margin: 0;
 	list-style: none;
+	position: relative;
+}
+
+#heroes-overlay .speakers-list li {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.speaker-wrapper {
+	position: relative;
 }
 
 #heroes-overlay .animate-in .photo {
@@ -601,7 +602,7 @@ section {
 }
 
 #heroes-overlay .photo {
-	width: 250px;
+	width: 220px;
 	display: block;
 	opacity: 0;
 	position: absolute;
@@ -610,7 +611,7 @@ section {
 #heroes-overlay .speaker {
 	box-sizing: padding-box;
 	opacity: 0;
-	padding-left: 270px;
+	padding-left: 240px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -693,12 +694,10 @@ section {
 	background: none;
 	border: none;
 	cursor: pointer;
-	height: 20px;
 	left: 30px;
 	position: absolute;
-	top: 50%;
+	top: 250px;
 	transition: all 1s ease;
-	width: 20px;
 }
 
 #heroes-overlay .previous:after,
@@ -733,6 +732,7 @@ section {
 	cursor: pointer;
 	position: absolute;
 	right: 0;
+	top: 0;
 	transition: all 1s ease;
 	z-index: 20;
 }

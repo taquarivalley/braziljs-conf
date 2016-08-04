@@ -50,27 +50,23 @@
     			<span class="menu-switch">Menu</span>
     			<ul class="chapters-list">
     				<li class="speakers">
-    					<a href="#Palestrantes" title="Ir para a seção dos palestrantes"><span class="sign">Palestrantes</span></a>
+    					<a href="#palestrantes" title="Ir para a seção dos palestrantes"><span class="sign">Palestrantes</span></a>
     					<span class="extended-menu">palestrantes</span>
     				</li>
+    				<!-- <li class="workshops">
+    					<a href="#workshops" title="Ir para a lista de workshops"><span class="sign">Workshops</span></a>
+    					<span class="extended-menu">workshops</span>
+    				</li> -->
     				<li class="schedule">
-    					<a href="#Programacao" title="Ir para a programação do evento"><span class="sign">Programação</span></a>
+    					<a href="#programacao" title="Ir para a programação do evento"><span class="sign">Programação</span></a>
     					<span class="extended-menu">programação</span>
     				</li>
-    				<li class="workshops">
-    					<a href="#Programacao" title="Ir para a lista de workshops"><span class="sign">Workshops</span></a>
-    					<span class="extended-menu">workshops</span>
-    				</li>
     				<li class="local">
-    					<a href="#Local" title="Ir para a área do local do evento"><span class="sign">Local</span></a>
+    					<a href="#local" title="Ir para a área do local do evento"><span class="sign">Local</span></a>
     					<span class="extended-menu">local</span>
     				</li>
-    				<li class="ticket">
-    					<a href="#Inscricoes" title="Ir para a seção de inscrições"><span class="sign">Inscrições</span></a>
-    					<span class="extended-menu">inscrições</span>
-    				</li>
                     <li class="sponsors">
-                        <a href="#Patrocinadores" title="Ir para a seção dos nossos patrocinadores"><span class="sign">Patrocinadores</span></a>
+                        <a href="#parceiros" title="Ir para a seção dos nossos patrocinadores"><span class="sign">Parceiros</span></a>
                         <span class="extended-menu">patrocinadores</span>
                     </li>
     			</ul>
@@ -91,18 +87,45 @@
 				</main>
 				<section id="heroes">
 					<div class="section-wrapper">
-						<h2 id="Palestrantes" class="title">
+						<h2 id="palestrantes" class="title">
 							<img src="img/title-palestrantes.png" />
 						</h2>
 
 						<div class="section-content">
 							<ul class="heroes-list">
-								<li class="hero" data-layer="1">
+								<li>
 									<a class="hero" href="javascript:;" title="Saiba mais sobre o palestrante Giovanni Comunello Jr" data-layer="1">
 										<img class="photo" src="../img/speakers/giovanni.jpg" alt="Giovanni Comunello Jr" />
 										<div class="info">
 											<strong class="hero-name">Giovanni Comunello Jr</strong>
 											<em class="hero-company">iTinvent</em>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="hero" href="javascript:;" title="Saiba mais sobre o palestrante Vinícius Magnus" data-layer="2">
+										<img class="photo" src="../img/speakers/vinicius.jpg" alt="Vinícius Magnus" />
+										<div class="info">
+											<strong class="hero-name">Vinícius Magnus</strong>
+											<em class="hero-company">Ulbra Torres</em>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="hero" href="javascript:;" title="Saiba mais sobre o palestrante Felipe Plets" data-layer="3">
+										<img class="photo" src="../img/speakers/plets.jpg" alt="Felipe Plets" />
+										<div class="info">
+											<strong class="hero-name">Felipe Plets</strong>
+											<em class="hero-company">Menvia</em>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="hero" href="javascript:;" title="Saiba mais sobre o palestrante Eduardo Thomas" data-layer="4">
+										<img class="photo" src="../img/speakers/eduardo.jpg" alt="Eduardo Thomas" />
+										<div class="info">
+											<strong class="hero-name">Eduardo Thomas</strong>
+											<em class="hero-company">iN2</em>
 										</div>
 									</a>
 								</li>
@@ -113,29 +136,128 @@
 						<button class="previous"></button>
 						<ul class="speakers-list sequence-canvas">
 							<li class="animate-in" itemscope itemtype="http://schema.org/Person">
-								<img class="photo" src="../img/speakers/giovanni.jpg" alt="Giovanni Comunello Jr" />
-								<div class="speaker">
-									<div class="info">
-										<h3 class="name" itemprop="name">Giovanni Comunello Jr</h3>
-										<em class="company" itemprop="worksFor">iTinvent</em>
-										<div class="information" itemprop="description">
-											<span class="spacer">&nbsp;</span>
-											<p>CEO &amp; Founder da iTinvent</p>
-											<p>Cientista da Computação com 20 anos de experiência em desenvolvimento de sistemas. Há quase três anos vem aplicando sua experiência em TI, Eletrônica Digital, Mecânica e Prototipação, agregada à sua ânsia por dar vida às coisas, no desenvolvimento de máquinas e artefatos interativos e conectados.</p>
+								<div class="speaker-wrapper">
+									<img class="photo" src="../img/speakers/giovanni.jpg" alt="Giovanni Comunello Jr" />
+									<div class="speaker">
+										<div class="info">
+											<h3 class="name" itemprop="name">Giovanni Comunello Jr</h3>
+											<em class="company" itemprop="worksFor">iTinvent</em>
+											<div class="information" itemprop="description">
+												<p>CEO &amp; Founder da iTinvent</p>
+												<p>Cientista da Computação com 20 anos de experiência em desenvolvimento de sistemas. Há quase três anos vem aplicando sua experiência em TI, Eletrônica Digital, Mecânica e Prototipação, agregada à sua ânsia por dar vida às coisas, no desenvolvimento de máquinas e artefatos interativos e conectados.</p>
+											</div>
 										</div>
+										<ul class="social-networks">
+											<li>
+												<a rel="external" href="https://www.facebook.com/gcomunellojr" title="Giovanni Comunello Jr - Facebook">
+													<i class="fa fa-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://www.linkedin.com/in/giovanni-jr-comunello-834b0067" title="Giovanni Comunello Jr - Facebook">
+													<i class="fa fa-linkedin" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
 									</div>
-									<ul class="social-networks">
-										<li>
-											<a rel="external" href="https://www.facebook.com/gcomunellojr" title="Giovanni Comunello Jr - Facebook">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a rel="external" href="https://www.facebook.com/gcomunellojr" title="LinkedIn - Facebook">
-												<i class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li>
-									</ul>
+								</div>
+							</li>
+							<li class="animate-in" itemscope itemtype="http://schema.org/Person">
+								<div class="speaker-wrapper">
+									<img class="photo" src="../img/speakers/vinicus.jpg" alt="Vinícius Magnus" />
+									<div class="speaker">
+										<div class="info">
+											<h3 class="name" itemprop="name">Vinícius Magnus</h3>
+											<em class="company" itemprop="worksFor">Ulbra Torres</em>
+											<div class="information" itemprop="description">
+												<p>Graduado em Sistemas de Informação, pós graduado em Governança de TI e Mestre no Ensino de Ciência e Matemática. Analista e consultor de TI e Professor na Universidade Luterana do Brasil.</p>
+											</div>
+										</div>
+										<ul class="social-networks">
+											<li>
+												<a rel="external" href="https://www.facebook.com/vinimagnus" title="Vinícius Magnus - Facebook">
+													<i class="fa fa-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://www.linkedin.com/in/vinimagnus" title="Vinícius Magnus - LinkedIn">
+													<i class="fa fa-linkedin" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://twitter.com/vinimagnus" title="Vinícius Magnus - Twitter">
+													<i class="fa fa-twitter" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="animate-in" itemscope itemtype="http://schema.org/Person">
+								<div class="speaker-wrapper">
+									<img class="photo" src="../img/speakers/plets.jpg" alt="Felipe Plets" />
+									<div class="speaker">
+										<div class="info">
+											<h3 class="name" itemprop="name">Felipe Plets</h3>
+											<em class="company" itemprop="worksFor">Menvia</em>
+											<div class="information" itemprop="description">
+												<p>CEO da Menvia e mestrando em Computação Aplicada pela UNISINOS. Felipe é poliglota das linguagens de programação e de espírito empreendedor, tem uma autêntica mente inquieta e experiência que vai da startup à multinacional. Acredita que Internet das Coisas é ponto chave na criação de experiências mágicas.</p>
+											</div>
+										</div>
+										<ul class="social-networks">
+											<li>
+												<a rel="external" href="https://www.linkedin.com/in/felipeplets" title="Felipe Plets - LinkedIn">
+													<i class="fa fa-linkedin" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://twitter.com/felipeplets" title="Felipe Plets - Twitter">
+													<i class="fa fa-twitter" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://github.com" title="Felipe Plets - GitHub">
+													<i class="fa fa-twitter" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="http://plets.me" title="Felipe Plets - Website">
+													<i class="fa fa-home" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="animate-in" itemscope itemtype="http://schema.org/Person">
+								<div class="speaker-wrapper">
+									<img class="photo" src="../img/speakers/eduardo.jpg" alt="Eduardo Thomas" />
+									<div class="speaker">
+										<div class="info">
+											<h3 class="name" itemprop="name">Eduardo Thomas</h3>
+											<em class="company" itemprop="worksFor">iN2</em>
+											<div class="information" itemprop="description">
+												<p>Empresário, programador, estudante de direito</p>
+											</div>
+										</div>
+										<ul class="social-networks">
+											<li>
+												<a rel="external" href="https://www.facebook.com/eduardothomas.com.br" title="Eduardo Thomas - Facebook">
+													<i class="fa fa-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://www.linkedin.com/in/eduardothomas" title="Eduardo Thomas - LinkedIn">
+													<i class="fa fa-linkedin" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li>
+												<a rel="external" href="https://www.instagram.com/eduthomas/" title="Eduardo Thomas - Instagram">
+													<i class="fa fa-instagram" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -143,16 +265,16 @@
 						<button class="close"></button>
 					</div>
 				</section>
-				<section id="workshops">
+				<!-- <section id="workshops">
 					<div class="section-wrapper">
-						<h2 class="title">
+						<h2 id="workshops" class="title">
 							<img src="img/title-workshops.png" alt="Workshops" />
 						</h2>
 					</div>
-				</section>
+				</section> -->
 				<section id="schedule">
 					<div class="section-wrapper">
-						<h2 class="title">
+						<h2 id="programacao" class="title">
 							<img src="img/title-programacao.png" alt="Programação" />
 						</h2>
 
@@ -310,7 +432,7 @@
 				</section>
 				<section id="place">
 					<div class="section-wrapper">
-						<h2 class="title">
+						<h2 id="local" class="title">
 							<img src="img/title-local.png" alt="Local" />
 						</h2>
 
@@ -336,7 +458,7 @@
 				</section>
 				<section id="sponsors">
 					<div class="section-wrapper">
-						<h2 class="title">
+						<h2 id="parceiros" class="title">
 							<img src="img/title-parceiros.png" alt="Local" />
 						</h2>
 						<div class="section-content">
