@@ -282,31 +282,23 @@ body {
 }
 
 #menu .chapters-list li.speakers a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.schedule a:before {
-	content: "\f0c9";
+	content: "\f007";
 }
 
 #menu .chapters-list li.workshops a:before {
-	content: "\f0c9";
+	content: "\f0ad";
+}
+
+#menu .chapters-list li.schedule a:before {
+	content: "\f0ca";
 }
 
 #menu .chapters-list li.local a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.ticket a:before {
-	content: "\f0c9";
-}
-
-#menu .chapters-list li.manifest a:before {
-	content: "\f0c9";
+	content: "\f041";
 }
 
 #menu .chapters-list li.sponsors a:before {
-	content: "\f0c9";
+	content: "\f005";
 }
 
 @media (min-width: 992px) {
@@ -769,8 +761,7 @@ section {
 
 /* SCHEDULE */
 #schedule h4 {
-	background: #000;
-	border: 1px solid #0265ff;
+	background: #0265ff;
 	margin-bottom: 30px;
 	padding: 10px;
 	text-align: center;
@@ -808,18 +799,23 @@ section {
 }
 
 #schedule td {
+	border-right: 1px solid #fff;
 	background: #000;
 	font-size: 16px;
-	padding: 15px 0 15px 15px;
+	padding: 15px;
 	text-transform: uppercase;
+}
+
+#schedule td:last-child {
+	border-right: none;
+}
+
+#schedule td.force-border {
+	border-right: 1px solid #fff;
 }
 
 #schedule td.hour {
 	color: #7fd32a;
-}
-
-#schedule td.speaker {
-	padding: 15px 0 0 30px;
 }
 
 #schedule td .info-wrapper {
@@ -843,7 +839,7 @@ section {
 	cursor: pointer;
 	float: right;
 	height: 20px;
-	margin-left: 10px;
+	margin: 0 10px;
 	position: relative;
 	transition: all 1s ease;
 	width: 20px;
