@@ -371,7 +371,7 @@ $(function () {
 
     PUBLIC.loadMaps = function () {
 
-        require(['async!http://maps.google.com/maps/api/js?sensor=false'], function () {
+        require(['async!https://maps.googleapis.com/maps/api/js?key=AIzaSyDqkwMGOmpgtKttSKXdQ6SP1iA9PMPaXPI'], function () {
 
             var mapsContainer = document.getElementById("map"),
                 mapInstance,
