@@ -530,7 +530,7 @@ section {
 #heroes .heroes-list .hero {
 	background: #0265ff;
 	display: block;
-	height: 200px;
+	height: 150px;
 	margin-bottom: 40px;
 	padding-right: 15px;
 	position: relative;
@@ -548,13 +548,13 @@ section {
 	position: absolute;
 	bottom: 15px;
 	box-sizing: padding-box;
-	padding-left: 170px;
+	padding-left: 130px;
 	width: 100%;
 	z-index: 6;
 }
 
 #heroes .heroes-list .hero-name {
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 900;
 	line-height: 120%;
 	color: #fff;
@@ -566,10 +566,27 @@ section {
 	transition: all 0.7s ease;
 	display: block;
 	font-style: normal;
-	font-size: 20px;
 	font-weight: 900;
 	line-height: 120%;
 	color: #fff;
+}
+
+@media (min-width: 440px) {
+	#heroes .heroes-list .hero {
+		height: 200px;
+	}
+
+	#heroes .heroes-list .info {
+		padding-left: 170px;
+	}
+
+	#heroes .heroes-list .hero-name {
+		font-size: 30px;
+	}
+
+	#heroes .heroes-list .hero-company {
+		font-size: 20px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -621,7 +638,7 @@ section {
 
 #heroes-overlay .photo {
 	width: 220px;
-	display: block;
+	display: none;
 	opacity: 0;
 	position: absolute;
 }
@@ -629,7 +646,6 @@ section {
 #heroes-overlay .speaker {
 	box-sizing: padding-box;
 	opacity: 0;
-	padding-left: 240px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -766,6 +782,17 @@ section {
 	opacity: .8;
 }
 
+
+@media (min-width: 605px) {
+	#heroes-overlay .photo {
+		display: block;
+	}
+
+	#heroes-overlay .speaker {
+		padding-left: 240px;
+	}
+}
+
 @media (min-width: 992px) {
 	#heroes-overlay {
 		padding-left: 0;
@@ -776,7 +803,7 @@ section {
 	}
 
 	#heroes-overlay .previous {
-		left: -30px;
+		left: -50px;
 	}
 
 	#heroes-overlay .next {
