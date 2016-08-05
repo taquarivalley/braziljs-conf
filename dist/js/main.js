@@ -378,23 +378,28 @@ $(function () {
                 coordenates,
                 marker,
                 maps = {},
-                options = {};
+                options = {},
+                geocoder = new google.maps.Geocoder();
 
             maps = {
 
                 configureMap : function () {
 
-                    coordenates = new google.maps.LatLng(-30.022226, -51.16244);
+                    geocoder.geocode( { 'address': 'Tecnovates - Universitário, Lajeado - RS, 95900-000'}, function(results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            coordenates = results[0]['geometry']['location'];
 
-                    options = {
-                        zoom : 18,
-                        center : coordenates,
-                        scrollwheel : false,
-                        mapTypeId : google.maps.MapTypeId.SATELLITE,
-                        streetViewControl : true
-                    };
+                            options = {
+                                zoom : 18,
+                                center : coordenates,
+                                scrollwheel : false,
+                                mapTypeId : google.maps.MapTypeId.SATELLITE,
+                                streetViewControl : true
+                            };
 
-                    maps.createInstance();
+                            maps.createInstance();
+                        }
+                    });
 
                 },
 
@@ -411,32 +416,10 @@ $(function () {
                     marker = new google.maps.Marker({
                         position : coordenates,
                         map : mapInstance,
-                        title : 'Teatro Bourbon Country'
+                        title : 'Tecnovates'
                     });
-
-                    maps.createWindow();
 
                 },
-
-                createWindow : function () {
-
-                    var contentString = "<strong>BrazilJS Conf 2013: </strong><br/>Saiba <a target='_blank' href='https://maps.google.com.br/maps?q=Teatro+do+Bourbon+Country&hl=pt-BR&ll=-30.023857,-51.161989&spn=0.008267,0.016512&sll=-14.25517,-53.925968&sspn=0.002875,0.008256&t=h&hq=Teatro+do+Bourbon+Country&radius=15000&z=17&iwloc=A'>como chegar</a> aqui!",
-                        infoWindow;
-
-                    if (internationalCountry) {
-
-                        contentString = "<strong>BrazilJS Conf 2013: </strong><br/>Know <a target='_blank' href='https://maps.google.com.br/maps?q=Teatro+do+Bourbon+Country&hl=pt-BR&ll=-30.023857,-51.161989&spn=0.008267,0.016512&sll=-14.25517,-53.925968&sspn=0.002875,0.008256&t=h&hq=Teatro+do+Bourbon+Country&radius=15000&z=17&iwloc=A'>how to get</a> here!";
-
-                    }
-
-                    infoWindow = new google.maps.InfoWindow({
-                        content : contentString,
-                        maxWidth : 400
-                    });
-
-                    infoWindow.open(mapInstance, marker);
-
-                }
 
             };
 
