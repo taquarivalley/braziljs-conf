@@ -402,9 +402,14 @@ body {
 
 /* HEADER */
 .header-wrapper {
-	margin: 30px 0;
+    background-image: url('../img/bg-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+    margin-top: 0;
+    padding-top: 65.31%; /* (img-height / img-width * container-width) */
 	position: relative;
-	width: 100%;
+    width: 100%;
 }
 
 .header-wrapper .bg {
@@ -425,9 +430,15 @@ body {
 	display: block;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 0;
 	margin-top: -74px;
-	margin-left: -194px;
+	text-align: center;
+	width: 100%;
+}
+
+.header-wrapper .logo img {
+	margin: 0 auto;
+	max-width: 80%;
 }
 
 .subtitle {
