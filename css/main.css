@@ -271,33 +271,36 @@ body {
 	background-color: #0265ff;
 }
 
-#menu .chapters-list li a:before {
+#menu .chapters-list li a::before {
+	display: inline-block;
 	font-family: FontAwesome;
 	font-size: 20px;
 	margin-right: 20px;
+	text-align: center;
+	width: 40px;
 }
 
 #menu .chapters-list li .extended-menu {
 	display: none;
 }
 
-#menu .chapters-list li.speakers a:before {
+#menu .chapters-list li.speakers a::before {
 	content: "\f007";
 }
 
-#menu .chapters-list li.workshops a:before {
+#menu .chapters-list li.workshops a::before {
 	content: "\f0ad";
 }
 
-#menu .chapters-list li.schedule a:before {
+#menu .chapters-list li.schedule a::before {
 	content: "\f0ca";
 }
 
-#menu .chapters-list li.local a:before {
+#menu .chapters-list li.local a::before {
 	content: "\f041";
 }
 
-#menu .chapters-list li.sponsors a:before {
+#menu .chapters-list li.sponsors a::before {
 	content: "\f005";
 }
 
@@ -331,6 +334,7 @@ body {
 	}
 
 	#menu .chapters-list li a {
+		padding: 0;
 		position: relative;
 		width: 60px;
 		height: 60px;
@@ -341,8 +345,11 @@ body {
 		color: #0265ff;
 	}
 
-	#menu .chapters-list li a:before {
+	#menu .chapters-list li a::before {
 		line-height: 60px;
+		margin: 0;
+		text-align: center;
+		width: 100%;
 	}
 
 	#menu .chapters-list li .extended-menu {
@@ -901,6 +908,7 @@ section {
 	padding: 0 13px 13px;
 	font-size: 14px;
 	color: rgb(172, 172, 172);
+	text-transform: none;
 }
 
 @media (min-width: 1170px) {
