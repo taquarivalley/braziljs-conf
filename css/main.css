@@ -1023,15 +1023,12 @@ section {
 }
 
 #sponsors .sponsor-list a {
-	background: #fff;
-	display: inline-block;
-	float: left;
+	display: block;
 	height: 150px;
-	margin-right: 10px;
+	margin-bottom: 20px;
 	padding: 20px;
-	width: 250px;
-    white-space: nowrap;
     text-align: center;
+    white-space: nowrap;
 }
 
 #sponsors .img-center-helper {
@@ -1042,14 +1039,36 @@ section {
 
 #sponsors .sponsor-list img {
 	vertical-align: middle;
+	width: auto;
 }
 
 #sponsors .sponsor-list p {
 	margin: 0;
 }
 
+
+@media (min-width: 605px) {
+	#sponsors .sponsor-list li {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#sponsors .sponsor-list a {
+		width: 48%;
+	}
+
+	#sponsors .sponsor-list p {
+		width: 48%;
+	}
+}
+
 #sponsors .criexp {
-	background-color: #2f53b4;
+	background: #fff;
+	color: #2f53b4;
+}
+
+#sponsors .menvia {
+	background-color: #ed6454;
 }
 
 #sponsors .taquari-valley {
