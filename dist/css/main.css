@@ -923,6 +923,8 @@ section {
 	clear: both;
 	max-height: 0;
 	margin-left: -85px;
+	position: relative;
+	z-index: 100;
 	background-color: rgb(26, 22, 23);
 	-webkit-transition: all ease 0.2s;
 	-moz-transition: all ease 0.2s;
